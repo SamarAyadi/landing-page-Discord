@@ -1,0 +1,58 @@
+.dark {
+  color: var(--color-dark);
+}
+.light {
+  color: var(--color-light);
+}
+.white {
+  color: var(--color-white);
+}
+.primary {
+  color: var(--color-primary);
+}
+.bg--dark {
+  background-color: var(--color-dark);
+}
+.bg--light {
+  background-color: var(--color-light);
+}
+.bg--white {
+  background-color: var(--color-white);
+}
+.bg--primary {
+  background-color: var(--color-primary);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title--primary {
+  font-size: 4.8rem; /* md,lg 5.6rem */
+}
+.title--secondary {
+  font-size: 4rem; /* md,lg 4.8rem */
+}
+.title--tertiary {
+  font-size: 3.2rem; /* md,lg 3.2rem */
+  /* font-weight: var(--font-medium); */
+  font-weight: bold;
+}
+
+.wave {
+  color: var(--color-light);
+  margin-bottom: -1rem;
+}
+.wave--inverted {
+  transform: rotateX(180deg);
+  margin-bottom: 0;
+  margin-top: -1rem;
+}
+.wave path {
+  d: path(
+    "M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z"
+  );
+  animation: wave 20s linear alternate infinite;
+}
